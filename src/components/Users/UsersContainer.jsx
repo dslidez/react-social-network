@@ -10,7 +10,6 @@ import Preloader from "../common/preloader/Preloader";
 import {withAuthRedirect} from "../HOC/withAuthRedirect";
 
 
-
 class UsersContainer extends React.Component {
 
     //теперь наш getUsers - это САНК-ЭКШН, а здесь мы отдаем ему каррент пейдж и педжсайз
