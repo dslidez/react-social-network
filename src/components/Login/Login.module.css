@@ -1,0 +1,38 @@
+.errors {
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    margin: 0 10px 10px 10px;
+}
+
+.emailField {
+    margin: 10px 10px 1px 10px;
+}
+
+.passwordField {
+    margin: 10px 10px 1px 10px;
+}
+
+.checkboxField {
+    margin: -5px 5px 0 10px;
+}
+
+.remember {
+    font-weight: 700;
+    font-size: 12px;
+    font-style: italic;
+    display: block;
+    margin: -18px 0 10px 26px;
+}
+
+.button {
+    margin: 10px 10px 10px 130px;
+}
+
+.formik{
+    border: 1px solid cadetblue;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}

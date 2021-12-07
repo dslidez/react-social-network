@@ -1,35 +1,37 @@
 import React from 'react';
 import s from './Navbar.module.css';
-console.log(s);
-// let s = {
-//     'nav': 'Navbar_nav__3ou9Q',
-//     'item': 'Navbar_item__3qaF3',
-//     'active' : 'Baksndakdn_actve'
- // }
-
-let c1 = "item";
-let c2 = "active";
-// "item active"
-let classes = c1 + " " + c2;
-let classesNew = `${s.item} ${c2}`;
-
+import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
     return <nav className={s.nav}>
         <div className={s.item}>
-            <a>Profile</a>
-        </div>
-        <div className={`${s.item} ${s.active}`}>
-            <a>Messages</a>
+            <NavLink to='/profile' activeClassName={s.active}>PROFILE</NavLink>
         </div>
         <div className={s.item}>
-            <a>News</a>
+            <NavLink to='/users' activeClassName={s.active}>USERS</NavLink>
         </div>
         <div className={s.item}>
-            <a>Music</a>
+            <NavLink to='/dialogs' activeClassName={s.active}>MESSAGES</NavLink>
         </div>
         <div className={s.item}>
-            <a>Settings</a>
+            <NavLink to='/news' activeClassName={s.active}>NEWS</NavLink>
+        </div>
+        <div className={s.item}>
+            <NavLink to='/music' activeClassName={s.active}>MUSIC</NavLink>
+        </div>
+        <div className={s.item}>
+            <NavLink to='/settings' activeClassName={s.active}>SETTINGS</NavLink>
+
+        </div>
+        <div className={s.friends}>
+            <NavLink to='/friends' activeClassName={s.active}><h3>MY FRIENDS</h3></NavLink>
+        </div>
+        <div className={s.friend1}>
+            <NavLink to='/friend1' activeClassName={s.active}>
+                <img src='https://99px.ru/sstorage/1/2017/02/image_11502170945009680947.gif' />
+                <img src='https://klike.net/uploads/posts/2019-06/1560329641_2.jpg' />
+                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FEQjYeVYv86TI-kFJ0T4mu52NIKwfTz50Q&usqp=CAU' />
+            </NavLink>
         </div>
     </nav>
 }
