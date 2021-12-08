@@ -7,3 +7,8 @@
     height: 500px;
     border-radius: 50px;
 }
+
+.status {
+    color:rgb(148, 16, 255);  
+    background-color: turquoise;
+}

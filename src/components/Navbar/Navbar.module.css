@@ -1,7 +1,8 @@
 .nav {
     grid-area: n;
-    background-color: burlywood;
+    background-color: rgb(120, 151, 209);
     padding: 20px;
+    border-radius: 10px;
 }
 
 .item a {
@@ -9,10 +10,19 @@
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.item a:hover {
+    display: inline-block;
+    color: rgb(253, 122, 122);
+    text-decoration: none;
+    font-size: larger;
+    transition: 0.4s;
 }
 
 .item a.active {
-    color: gold;
+    color: rgb(240, 178, 248);
 }
 
 .friends a  {
