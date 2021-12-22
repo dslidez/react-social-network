@@ -20,7 +20,7 @@
 }
 
 .loginBlock:hover {
-    color:thistle;
+    color:rgb(219, 189, 219);
     transition: 0.3s;
 }
 
